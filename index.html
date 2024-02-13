@@ -1,0 +1,509 @@
+<!-- 
+Responsive HTML Table With Pure CSS - Web Design/UI Design
+
+Code written by:
+👨🏻‍⚕️ Coding Design (Jeet Saru)
+
+> You can do whatever you want with the code. However if you love my content, you can **SUBSCRIBED** my YouTube Channel.
+
+🌎link: www.youtube.com/codingdesign 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert | Export html Table to CSV & EXCEL File</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>CPU List</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> CPU <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> INTEL /AMD <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> CORE <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> THREAD <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Lithography<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Retailer<span class="icon-arrow">&UpArrow;</span></th>
+                        <th> PRICE <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- i9 14th gen-->                    
+                    <tr>
+                        <td> 1 </td>
+                        <td> <a href="https://www.terminalhk.com/products/%E4%B8%AD%E5%A4%AE%E8%99%95%E7%90%86%E5%99%A8/Intel%E8%99%95%E7%90%86%E5%99%A8/652d709e6123c4aa0daf154e" alt="">I9-14900K</td>
+                        <td> Intel </td>
+                        <td> 24 </td>
+                        <td> 32 </td>
+
+                        <td>
+                            <p class="status delivered">7</p>
+                        </td>
+                        <td>
+                            <p class="status shipped">HKTERMINAL</p>
+                        </td>
+                        <td> <strong> $128.90 </strong></td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td><img src="images/Jeet Saru.png" alt=""> I9-14900KF </td>
+                        <td> Intel </td>
+                        <td> 24 </td>
+                        <td>
+                            <p class="status cancelled">32</p>
+                        </td>
+                        <td>
+                            <p class="status shipped">HKTERMINAL</p>
+                        </td>
+                        <td> <strong>$5350.50</strong> </td>
+                    </tr>
+                    <!-- i9 13th gen-->
+                    <tr>
+                        <td> 3</td>
+                        <td><img src="images/Sonal Gharti.jpg" alt=""> 13900K </td>
+                        <td> Intel </td>
+                        <td> 24 </td>
+                        <td>
+                            <p class="status shipped">32</p>
+                        </td>
+                        <td>
+                            <p class="status shipped">HKTERMINAL</p>
+                        </td>
+                        <td> <strong>$210.40</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> 13900KF </td>
+                        <td> Intel </td>
+                        <td> 24</td>
+                        <td>
+                            <p class="status shipped">32</p>
+                        </td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong>$149.70</strong> </td>
+                    </tr>
+                    
+                    <!-- AMD R9 7th gen-->                    
+                    <tr>
+                        <td> 5</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R9 - 7950X3D  </td>
+                        <td> AMD </td>
+                        <td> 16 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 6</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> R9 - 7950X </td>
+                        <td> AMD </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R9 - 7900X3D  </td>
+                        <td> AMD </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R9 - 7900X  </td>
+                        <td> AMD </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R9 - 7900  </td>
+                        <td> AMD </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+                    <!-- i7 14th gen-->
+                    <tr>
+                        <td> 10</td>
+                        <td><img src="images/Alson GC.jpg" alt=""> i7 - 14700K </td>
+                        <td> Intel </td>
+                        <td> 20 May, 2023 </td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 11</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> i7 - 14700KF </td>
+                        <td> Intel </td>
+                        <td> 30 Feb, 2023 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$149.70</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 12</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i7 - 14700 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+
+                    <!-- i7 13th gen-->
+                    <tr>
+                        <td> 13</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i7 - 13700K </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 14</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i7 - 13700KF </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- AMD R7 8th gen-->
+                    <tr>
+                        <td> 15</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> R7 - 8700G </td>
+                        <td> AMD </td>
+                        <td> 8</td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+
+                    <!-- AMD R7 7th gen-->
+                    <tr>
+                        <td> 16</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> R7 - 7800X3D </td>
+                        <td> AMD </td>
+                        <td> 8</td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 17</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> R7 - 7700X </td>
+                        <td> AMD </td>
+                        <td> 8</td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 18</td>
+                        <td><img src="images/Sarita Limbu.jpg" alt=""> R7 - 7700 </td>
+                        <td> AMD </td>
+                        <td> 8</td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>$399.99</strong> </td>
+                    </tr>
+
+                    <!-- Intel i5 14th gen-->
+                    <tr>
+                        <td> 19</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 14600K </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 20</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 14600KF </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 21</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 14500 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 22</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 14400 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 23</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 14400F </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- Intel i5 13th gen-->
+                    <tr>
+                        <td> 24</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 13600K </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 25</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 13600KF </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 26</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 13500 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 27</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 13400 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 28</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i5 - 13400F </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- AMD R5 8th gen-->
+                    <tr>
+                        <td> 29</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R5 - 8500G </td>
+                        <td> AMD </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- AMD R5 7th gen-->
+                    <tr>
+                        <td> 30</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R5 - 7600X </td>
+                        <td> AMD </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 31</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R5 - 7600 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 32</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R5 - 7500F </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- Intel i3 14th gen-->
+                    <tr>
+                        <td> 33</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i3 - 14100 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 34</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i3 - 14100F </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- Intel i3 13th gen-->
+                    <tr>
+                        <td> 35</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i3 - 13100 </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td> 36</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> i3 - 13100F </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- AMD R3 8th gen-->
+                    <tr>
+                        <td> 37</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> R3 - 8300G </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <!-- 分隔線-->
+
+
+                    
+
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>$249.99</strong> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
